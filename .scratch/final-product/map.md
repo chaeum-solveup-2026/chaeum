@@ -19,6 +19,10 @@ Label: wayfinder:map
 - 결정 일정(10/28 확정, 설계는 이번 주 완료 목표): 10/28 01 회고, 10/28~29 10 배정 CSP 확인과 11 대피소 API 이용신청(사람 작업), 10/29 02 기능 범위와 07 시범 사용자, 10/30 03 아키텍처(10 결과 필요, 예선 1차본 마감일), 10/31 08 시연과 09 개발 일정, 11/01 지도 완료 후 /to-spec, /to-tickets. 밀리면 예선 기획서 일정 문구는 이 지도의 일정 원칙만으로 쓴다
 - 세션마다 참고할 스킬: grilling, domain-modeling (기본), research (조사 티켓), prototype (화면이나 동작 결정)
 
+## Status
+
+2026-10-28: 결정 티켓이 모두 닫혔다. 목적지에 도달했으므로 /to-spec 과 /to-tickets 로 넘긴다. 남은 사람 작업(대피소 API 이용신청, 협력 기관 접촉 준비)은 개발 일정 안에서 진행한다.
+
 ## Decisions so far
 
 <!-- 닫힌 티켓마다 한 줄: [제목](issues/NN-slug.md): 요지 -->
@@ -33,6 +37,7 @@ Label: wayfinder:map
 - [플랫폼 발급 NCP 계정에서 API 인증키 발급 가능 여부 확인](issues/15-ncp-api-key.md): 접근 불가. ncloud 테라폼 불가, 대안은 17
 - [NCP API 키 없이 인프라를 코드로 관리하는 방법](issues/17-infra-as-code-without-api-key.md): 테라폼 코드를 기준으로 작성하고 콘솔에서 그대로 생성 후 대조. 코드는 validate 까지, 키를 받으면 import. 서버 안은 Ansible/cloud-init, DNS 는 cloudflare 테라폼 apply
 - [GoCD 채택 팀원 동의](issues/16-gocd-team-consent.md): 동의 못 받음. CI/CD 는 GitHub Actions + NCP 자체 실행기, 수집은 앱 안 스케줄. GoCD 는 여유 목록, 이후 재설득
+- [3주 개발 일정과 역할](issues/09-schedule-roles.md): W0 환경 구성(이번 주 착수) -> W1 배포된 tracer bullet(11/17 교류회 시연) -> W2 배정과 기부 -> W3 오프라인, 평시, 사용성 테스트 -> 발표 준비. 작은 티켓 큐에서 손이 빈 사람이 가져가는 pull 방식, NCP 콘솔과 정답 표 검수만 담당 지정
 - [채움 팀에 배정된 민간 클라우드(CSP) 확인](issues/10-confirm-csp.md): NCP 사용 확정(10/28). 콘솔은 대표자만 접속
 - [공공데이터 연동 범위](issues/06-public-data.md): 연동 가능한 것은 이재민 임시주거시설 조회 API(15139148) 하나. 시설, 위치, 수용 인원은 있고 품목과 수량은 없음. 통합대피소는 수용 인원 없음, 구호상황보고와 물자재고는 대피소와 연결 불가
 - [분류 모델(C안)을 실제로 넣을지](issues/05-classifier-model.md): laya 는 fp32 ONNX 가 이미 있으나 상주 메모리 2GB대, 지연 미측정. JVM 직접 탑재는 비권장, 규칙 보강 -> 소형 모델 -> Python 사이드카 순. 채택 여부는 02, 형태는 03
