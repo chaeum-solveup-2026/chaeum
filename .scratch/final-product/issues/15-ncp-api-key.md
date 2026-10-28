@@ -1,7 +1,7 @@
 # 15: 플랫폼 발급 NCP 계정에서 API 인증키 발급 가능 여부 확인
 
 Type: task
-Status: open
+Status: resolved
 Blocked by: None (can start immediately)
 
 ## Question
@@ -12,3 +12,8 @@ Blocked by: None (can start immediately)
 - [ ] 플랫폼 경유로 NCP 콘솔 접속 -> 마이페이지 > 계정 관리 > 인증키 관리에서 신규 발급이 되는지 확인
 - [ ] 막혀 있으면 사무국(support@cccr.or.kr)에 테라폼 사용 목적으로 인증키 발급 가능 여부 문의
 - [ ] 결과만 기록한다. 인증키 값은 파일, 저장소, 채팅에 남기지 않는다
+
+## Answer
+
+- (사실, 2026-10-28 찬규님 확인) 플랫폼 발급 NCP 계정에서는 API 인증키에 접근할 수 없다.
+- 영향: ncloud 테라폼 provider 로 NCP 자원을 만들 수 없다. ADR 0003 의 "모든 클라우드 자원은 테라폼" 을 그대로 지킬 수 없어 티켓 17 에서 대안을 정한다.
