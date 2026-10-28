@@ -23,9 +23,10 @@ Label: wayfinder:map
 
 <!-- 닫힌 티켓마다 한 줄: [제목](issues/NN-slug.md): 요지 -->
 
+- [채움 팀에 배정된 민간 클라우드(CSP) 확인](issues/10-confirm-csp.md): NCP 사용 확정(10/28). 콘솔은 대표자만 접속
 - [공공데이터 연동 범위](issues/06-public-data.md): 연동 가능한 것은 이재민 임시주거시설 조회 API(15139148) 하나. 시설, 위치, 수용 인원은 있고 품목과 수량은 없음. 통합대피소는 수용 인원 없음, 구호상황보고와 물자재고는 대피소와 연결 불가
 - [분류 모델(C안)을 실제로 넣을지](issues/05-classifier-model.md): laya 는 fp32 ONNX 가 이미 있으나 상주 메모리 2GB대, 지연 미측정. JVM 직접 탑재는 비권장, 규칙 보강 -> 소형 모델 -> Python 사이드카 순. 채택 여부는 02, 형태는 03
-- [NCP 배포 구성과 승인 상태](issues/04-ncp-deploy.md): 2026-07 안내상 NCP, KT 는 신규 발급 중단, NHN Cloud 만 가능. 팀당 계정 1개, 대표자만 접속, 클라우드 AI 상품 금지. 실제 배정 CSP 는 확인 필요
+- [NCP 배포 구성과 승인 상태](issues/04-ncp-deploy.md): 2026-07 안내상 NCP, KT 는 신규 발급 중단, NHN Cloud 만 가능. 팀당 계정 1개, 대표자만 접속, 클라우드 AI 상품 금지. 실제 배정 CSP 는 NCP 로 확정(10)
 
 ## Not yet specified
 
