@@ -22,6 +22,8 @@ Label: wayfinder:map
 
 <!-- 닫힌 티켓마다 한 줄: [제목](issues/NN-slug.md): 요지 -->
 
+- [NCP 배포 구성과 승인 상태](issues/04-ncp-deploy.md): 2026-07 안내상 NCP, KT 는 신규 발급 중단, NHN Cloud 만 가능. 팀당 계정 1개, 대표자만 접속, 클라우드 AI 상품 금지. 실제 배정 CSP 는 확인 필요
+
 ## Not yet specified
 
 - 입력 경로 확장: 문자 수신(게이트웨이 폰 또는 수신 서비스), PWA 오프라인 기록, 카카오톡 채널 챗봇. 기능 범위(02)가 정해져야 질문이 선명해진다
