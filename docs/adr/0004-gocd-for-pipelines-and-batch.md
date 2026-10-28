@@ -1,5 +1,5 @@
 ---
-status: proposed
+status: deferred
 ---
 
 # 빌드, 배포와 배치는 GoCD 한 곳에서 흐름을 본다
@@ -11,3 +11,7 @@ status: proposed
 - GitHub Actions: 운영 부담이 없지만 실행 시간 제한과, 워크플로 하나 안의 작업 그래프만 보인다
 - GitHub Actions + NCP 자체 실행기: 시간 제한은 풀리지만 여러 파이프라인을 잇는 흐름은 볼 수 없다
 - Argo CD: 쿠버네티스 전용이라 서버 1대 docker compose 구성에 붙일 곳이 없다
+
+## 2026-10-28 결정
+
+팀원 동의를 받지 못해 보류(deferred)한다. 지금은 GitHub Actions + NCP 자체 실행기와 앱 안 스케줄로 간다. GoCD 는 제품으로 가치를 보인 뒤 다시 제안한다.
