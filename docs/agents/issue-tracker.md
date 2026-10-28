@@ -48,4 +48,4 @@ Used by `/wayfinder`. The **map** is a single issue with **child** issues as tic
 ## 이 저장소의 메모
 
 - 저장소: chaeum-solveup-2026/chaeum. 2026-10-28 에 로컬 마크다운에서 GitHub Issues 로 옮겼다
-- 본선 계획 지도와 결정 티켓(.scratch/final-product/)은 끝난 기록이라 이슈로 옮기지 않았다. 새 작업은 모두 GitHub Issues 에 만든다
+- 본선 계획 지도와 결정 티켓(docs/planning/final-product/)은 끝난 기록이라 이슈로 옮기지 않았다. 새 작업은 모두 GitHub Issues 에 만든다
