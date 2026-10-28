@@ -22,6 +22,7 @@ Label: wayfinder:map
 
 <!-- 닫힌 티켓마다 한 줄: [제목](issues/NN-slug.md): 요지 -->
 
+- [분류 모델(C안)을 실제로 넣을지](issues/05-classifier-model.md): laya 는 fp32 ONNX 가 이미 있으나 상주 메모리 2GB대, 지연 미측정. JVM 직접 탑재는 비권장, 규칙 보강 -> 소형 모델 -> Python 사이드카 순. 채택 여부는 02, 형태는 03
 - [NCP 배포 구성과 승인 상태](issues/04-ncp-deploy.md): 2026-07 안내상 NCP, KT 는 신규 발급 중단, NHN Cloud 만 가능. 팀당 계정 1개, 대표자만 접속, 클라우드 AI 상품 금지. 실제 배정 CSP 는 확인 필요
 
 ## Not yet specified
