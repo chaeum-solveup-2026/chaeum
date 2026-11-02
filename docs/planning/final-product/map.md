@@ -36,7 +36,7 @@ Label: wayfinder:map
 - [본선 시연 시나리오와 발표 구성](issues/08-demo-scenario.md): 10분 배분(시연 4분), 실제 주소 라이브 + 녹화 백업, 담당자 입력부터 기부 전 확인, 수령, 현황판까지 한 이야기. 실제 시설 + 가상 요청. 확장성은 CI/CD 화면, 인프라 코드 복제, 위젯 한 줄로
 - [플랫폼 발급 NCP 계정에서 API 인증키 발급 가능 여부 확인](issues/15-ncp-api-key.md): 접근 불가. ncloud 테라폼 불가, 대안은 17
 - [NCP API 키 없이 인프라를 코드로 관리하는 방법](issues/17-infra-as-code-without-api-key.md): 테라폼 코드를 기준으로 작성하고 콘솔에서 그대로 생성 후 대조. 코드는 validate 까지, 키를 받으면 import. 서버 안은 Ansible/cloud-init, DNS 는 cloudflare 테라폼 apply
-- [GoCD 채택 팀원 동의](issues/16-gocd-team-consent.md): 동의 못 받음. CI/CD 는 GitHub Actions + NCP 자체 실행기, 수집은 앱 안 스케줄. GoCD 는 여유 목록, 이후 재설득
+- [CI/CD 도구 선택(GoCD 보류)](issues/16-gocd-team-consent.md): GoCD 는 지금 채택하지 않음. CI/CD 는 GitHub Actions + NCP 자체 실행기, 수집은 앱 안 스케줄. GoCD 는 여유 목록, 이후 재검토
 - [3주 개발 일정과 역할](issues/09-schedule-roles.md): W0 환경 구성(이번 주 착수) -> W1 배포된 tracer bullet(11/17 교류회 시연) -> W2 배정과 기부 -> W3 오프라인, 평시, 사용성 테스트 -> 발표 준비. 작은 티켓 큐에서 손이 빈 사람이 가져가는 pull 방식, NCP 콘솔과 정답 표 검수만 담당 지정
 - [채움 팀에 배정된 민간 클라우드(CSP) 확인](issues/10-confirm-csp.md): NCP 사용 확정(10/28). 콘솔은 대표자만 접속
 - [공공데이터 연동 범위](issues/06-public-data.md): 연동 가능한 것은 이재민 임시주거시설 조회 API(15139148) 하나. 시설, 위치, 수용 인원은 있고 품목과 수량은 없음. 통합대피소는 수용 인원 없음, 구호상황보고와 물자재고는 대피소와 연결 불가
